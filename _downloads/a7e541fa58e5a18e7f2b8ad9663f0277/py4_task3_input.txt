@@ -1,0 +1,6 @@
+Name: Glucose Oxidase
+Path Length: 1
+Molar Extinction Coefficient: 19400
+Absorbency: 0.9863
+Absorbency: 0.6868
+Absorbency: 0.4462

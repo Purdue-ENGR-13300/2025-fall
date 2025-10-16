@@ -1,0 +1,1208 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../../../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>12.2.3. Task 3 &#8212; Purdue University ENGR 13300</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../../../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../../../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../../../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/custom.css?v=f14e7167" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../../../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../../../../../_static/documentation_options.js?v=a8e58a58"></script>
+    <script src="../../../../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../../../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../../../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../../../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Part_4_Team_Project/M2/tasks/team_3/a/instructions';</script>
+    <link rel="icon" href="../../../../../_static/avatar.png"/>
+    <link rel="index" title="Index" href="../../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../../search.html" />
+    <link rel="next" title="13. Demo" href="../../../../M3/0_overview.html" />
+    <link rel="prev" title="12.2.2. Task 2" href="../../team_2/a/instructions.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../../../../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../../../../_static/logo.png" class="logo__image only-light" alt="Purdue University ENGR 13300 - Home"/>
+    <script>document.write(`<img src="../../../../../_static/logo.png" class="logo__image only-dark" alt="Purdue University ENGR 13300 - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../../../../intro.html">
+                    Transforming Ideas to Innovation
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Start Here</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../../../../Start_Here/syllabus.html">Syllabus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../Start_Here/meet_the_team.html">Meet Your Instructional Team</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../Start_Here/help_sessions.html">Help Sessions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../Start_Here/course_schedule.html">Course Schedule</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../Start_Here/course_software/course_software.html">Course Software</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">MS Excel</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../../../Part_1_Excel/M1/0_overview.html">1. <strong class="program">MS Excel</strong> 1</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../Part_1_Excel/M1/1_pre-class_material.html">1.1. Pre-Class Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_1_Excel/M1/1.1_materials.html">1.1.1. Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_1_Excel/M1/tasks/pre_0/a/instructions.html">1.1.2. Task 0</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../Part_1_Excel/M1/2_team_assignments.html">1.2. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_1_Excel/M1/tasks/team_1/a/instructions.html">1.2.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_1_Excel/M1/tasks/team_2/a/instructions.html">1.2.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_1_Excel/M1/tasks/team_3/a/instructions.html">1.2.3. Task 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../Part_1_Excel/M1/3_ind_assignments.html">1.3. Individual Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_1_Excel/M1/tasks/ind_1/a/instructions.html">1.3.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_1_Excel/M1/tasks/ind_2/a/instructions.html">1.3.2. Task 2</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../../../Part_1_Excel/M2/0_overview.html">2. <strong class="program">MS Excel</strong> 2</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../Part_1_Excel/M2/1_pre-class_material.html">2.1. Pre-Class Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_1_Excel/M2/1.1_materials.html">2.1.1. Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_1_Excel/M2/tasks/pre_0/a/instructions.html">2.1.2. Task 0</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../Part_1_Excel/M2/2_team_assignments.html">2.2. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_1_Excel/M2/tasks/team_1/a/instructions.html">2.2.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_1_Excel/M2/tasks/team_2/a/instructions.html">2.2.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_1_Excel/M2/tasks/team_3/a/instructions.html">2.2.3. Task 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../Part_1_Excel/M2/3_ind_assignments.html">2.3. Individual Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_1_Excel/M2/tasks/ind_1/a/instructions.html">2.3.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_1_Excel/M2/tasks/ind_2/a/instructions.html">2.3.2. Task 2</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../../../Part_1_Excel/M3/0_overview.html">3. <strong class="program">MS Excel</strong> 3</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../Part_1_Excel/M3/1_pre-class_material.html">3.1. Pre-Class Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_1_Excel/M3/1.1_materials.html">3.1.1. Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_1_Excel/M3/tasks/pre_0/a/instructions.html">3.1.2. Task 0</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../Part_1_Excel/M3/2_team_assignments.html">3.2. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_1_Excel/M3/tasks/team_1/a/instructions.html">3.2.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_1_Excel/M3/tasks/team_2/a/instructions.html">3.2.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_1_Excel/M3/tasks/team_3/a/instructions.html">3.2.3. Task 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../Part_1_Excel/M3/3_ind_assignments.html">3.3. Individual Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_1_Excel/M3/tasks/ind_1/a/instructions.html">3.3.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_1_Excel/M3/tasks/ind_2/a/instructions.html">3.3.2. Task 2</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Dream Project</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../../../../Part_2_Dream_Project/M1/0_overview.html">4. Dream Project</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Professional Preparation</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../../../Part_2_Professional_Preparation/M1/0_overview.html">5. Professional Preparation</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../Part_2_Professional_Preparation/M1/pwl_assignments.html">5.1. West Lafayette</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_2_Professional_Preparation/M1/activities/pwl_1/career_exploration_1.html">5.1.1. Career Exploration 1 (EYM)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_2_Professional_Preparation/M1/activities/pwl_2/career_exploration_2.html">5.1.2. Career Exploration 2 (EYM)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_2_Professional_Preparation/M1/activities/pwl_3/career_exploration_3.html">5.1.3. Career Exploration 3 (EYM)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_2_Professional_Preparation/M1/activities/pwl_4/personal_activity.html">5.1.4. Personal Activity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_2_Professional_Preparation/M1/activities/pwl_5/cultural_experience.html">5.1.5. Cultural Experience</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../Part_2_Professional_Preparation/M1/pin_assignments.html">5.2. Indianapolis</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_2_Professional_Preparation/M1/activities/pin_1/major_exploration_1.html">5.2.1. Major Exploration 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_2_Professional_Preparation/M1/activities/pin_2/major_exploration_2.html">5.2.2. Major Exploration 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_2_Professional_Preparation/M1/activities/pin_3/personal_activity_1.html">5.2.3. Personal Activity 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_2_Professional_Preparation/M1/activities/pin_4/personal_activity_2.html">5.2.4. Personal Activity 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_2_Professional_Preparation/M1/activities/pin_5/cultural_experience.html">5.2.5. Cultural Experience</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../Part_2_Professional_Preparation/M1/common_assignments.html">5.3. Common</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_2_Professional_Preparation/M1/activities/common_1/resume.html">5.3.1. Resume Preparation</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Teaming</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../../../Part_2_Teaming/M1/0_overview.html">6. Teaming</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../Part_2_Teaming/M1/2_team_assignments.html">6.1. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_2_Teaming/M1/tasks/team_1/instructions.html">6.1.1. Task 1</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../Part_2_Teaming/M1/3_ind_assignments.html">6.2. Individual Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_2_Teaming/M1/tasks/ind_1/instructions.html">6.2.1. Task 1</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Python</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../../../Part_3_Python/M1/0_overview.html">7. <strong class="program">Python</strong> 1</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../Part_3_Python/M1/1_pre-class_material.html">7.1. Pre-Class Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_3_Python/M1/1.1_materials.html">7.1.1. Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_3_Python/M1/tasks/pre_0/a/instructions.html">7.1.2. Task 0</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../Part_3_Python/M1/2_team_assignments.html">7.2. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_3_Python/M1/tasks/team_1/b/instructions.html">7.2.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_3_Python/M1/tasks/team_2/a/instructions.html">7.2.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_3_Python/M1/tasks/team_3/c/instructions.html">7.2.3. Task 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../Part_3_Python/M1/3_ind_assignments.html">7.3. Individual Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_3_Python/M1/tasks/ind_1/a/instructions.html">7.3.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_3_Python/M1/tasks/ind_2/series_and_parallel_circuits/instructions.html">7.3.2. Task 2</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../../../Part_3_Python/M2/0_overview.html">8. <strong class="program">Python</strong> 2</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../Part_3_Python/M2/1_pre-class_material.html">8.1. Pre-Class Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_3_Python/M2/1.1_materials.html">8.1.1. Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_3_Python/M2/tasks/pre_0/a/instructions.html">8.1.2. Task 0</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../Part_3_Python/M2/2_team_assignments.html">8.2. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_3_Python/M2/tasks/team_1/a/instructions.html">8.2.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_3_Python/M2/tasks/team_2/a/instructions.html">8.2.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_3_Python/M2/tasks/team_3/a/instructions.html">8.2.3. Task 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../Part_3_Python/M2/3_ind_assignments.html">8.3. Individual Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_3_Python/M2/tasks/ind_1/a/instructions.html">8.3.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_3_Python/M2/tasks/ind_2/a/instructions.html">8.3.2. Task 2</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../../../Part_3_Python/M3/0_overview.html">9. <strong class="program">Python</strong> 3</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../Part_3_Python/M3/1_pre-class_material.html">9.1. Pre-Class Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_3_Python/M3/1.1_materials.html">9.1.1. Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_3_Python/M3/tasks/pre_0/a/instructions.html">9.1.2. Task 0</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../Part_3_Python/M3/2_team_assignments.html">9.2. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_3_Python/M3/tasks/team_1/a/instructions.html">9.2.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_3_Python/M3/tasks/team_2/a/instructions.html">9.2.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_3_Python/M3/tasks/team_3/a/instructions.html">9.2.3. Task 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../Part_3_Python/M3/3_ind_assignments.html">9.3. Individual Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_3_Python/M3/tasks/ind_1/llms/instructions.html">9.3.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_3_Python/M3/tasks/ind_2/a/instructions.html">9.3.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_3_Python/M3/tasks/ind_1/genotype/instructions.html">9.3.3. Task 3 (Bonus)</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../../../Part_3_Python/M4/0_overview.html">10. <strong class="program">Python</strong> 4</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../Part_3_Python/M4/1_pre-class_material.html">10.1. Pre-Class Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_3_Python/M4/1.1_materials.html">10.1.1. Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_3_Python/M4/tasks/pre_0/a/instructions.html">10.1.2. Task 0</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../Part_3_Python/M4/2_team_assignments.html">10.2. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_3_Python/M4/tasks/team_1/a/instructions.html">10.2.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_3_Python/M4/tasks/team_2/a/instructions.html">10.2.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_3_Python/M4/tasks/team_3/a/instructions.html">10.2.3. Task 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../Part_3_Python/M4/3_ind_assignments.html">10.3. Individual Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_3_Python/M4/tasks/ind_1/a/instructions.html">10.3.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_3_Python/M4/tasks/ind_2/a/instructions.html">10.3.2. Task 2</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Team Project</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../../M1/0_overview.html">11. Checkpoint 1</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../M1/1_pre-class_material.html">11.1. Pre-Class Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../M1/1.1_materials.html">11.1.1. Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../M1/tasks/pre_0/a/instructions.html">11.1.2. Task 0</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../M1/2_team_assignments.html">11.2. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../M1/tasks/team_1/a/instructions.html">11.2.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../M1/tasks/team_2/a/instructions.html">11.2.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../M1/tasks/team_3/a/instructions.html">11.2.3. Task 3</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../../../0_overview.html">12. Checkpoint 2</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../1_pre-class_material.html">12.1. Pre-Class Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../1.1_materials.html">12.1.1. Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../pre_0/a/instructions.html">12.1.2. Task 0</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 current active has-children"><a class="reference internal" href="../../../2_team_assignments.html">12.2. Team Assignments</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../../team_1/a/instructions.html">12.2.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../team_2/a/instructions.html">12.2.2. Task 2</a></li>
+<li class="toctree-l3 current active"><a class="current reference internal" href="#">12.2.3. Task 3</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../../M3/0_overview.html">13. Demo</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../M3/1_team_assignments.html">13.1. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../M3/tasks/team_1/a/instructions.html">13.1.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../M3/tasks/team_2/a/instructions.html">13.1.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../M3/tasks/team_3/a/instructions.html">13.1.3. Task 3</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../M3/tasks/team_4/a/instructions.html">13.1.4. Task 4</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">MATLAB</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../../../Part_5_MATLAB/M1/0_overview.html">14. <strong class="program">MATLAB</strong> 1</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../Part_5_MATLAB/M1/1_pre-class_material.html">14.1. Pre-Class Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_5_MATLAB/M1/1.1_materials.html">14.1.1. Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_5_MATLAB/M1/tasks/pre_0/a/instructions.html">14.1.2. Task 0</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../Part_5_MATLAB/M1/2_team_assignments.html">14.2. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_5_MATLAB/M1/tasks/team_1/a/instructions.html">14.2.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_5_MATLAB/M1/tasks/team_2/a/instructions.html">14.2.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_5_MATLAB/M1/tasks/team_3/a/instructions.html">14.2.3. Task 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../Part_5_MATLAB/M1/3_ind_assignments.html">14.3. Individual Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_5_MATLAB/M1/tasks/ind_1/a/instructions.html">14.3.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_5_MATLAB/M1/tasks/ind_2/a/instructions.html">14.3.2. Task 2</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../../../Part_5_MATLAB/M2/0_overview.html">15. <strong class="program">MATLAB</strong> 2</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../Part_5_MATLAB/M2/1_pre-class_material.html">15.1. Pre-Class Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_5_MATLAB/M2/1.1_materials.html">15.1.1. Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_5_MATLAB/M2/tasks/pre_0/a/instructions.html">15.1.2. Task 0</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../Part_5_MATLAB/M2/2_team_assignments.html">15.2. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_5_MATLAB/M2/tasks/team_1/a/instructions.html">15.2.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_5_MATLAB/M2/tasks/team_2/a/instructions.html">15.2.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_5_MATLAB/M2/tasks/team_3/a/instructions.html">15.2.3. Task 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../Part_5_MATLAB/M2/3_ind_assignments.html">15.3. Individual Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_5_MATLAB/M2/tasks/ind_1/a/instructions.html">15.3.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_5_MATLAB/M2/tasks/ind_2/a/instructions.html">15.3.2. Task 2</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../../../Part_5_MATLAB/M3/0_overview.html">16. <strong class="program">MATLAB</strong> 3</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../Part_5_MATLAB/M3/1_pre-class_material.html">16.1. Pre-Class Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_5_MATLAB/M3/1.1_materials.html">16.1.1. Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_5_MATLAB/M3/tasks/pre_0/a/instructions.html">16.1.2. Task 0</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../Part_5_MATLAB/M3/2_team_assignments.html">16.2. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_5_MATLAB/M3/tasks/team_1/a/instructions.html">16.2.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_5_MATLAB/M3/tasks/team_2/a/instructions.html">16.2.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_5_MATLAB/M3/tasks/team_3/a/instructions.html">16.2.3. Task 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../Part_5_MATLAB/M3/3_ind_assignments.html">16.3. Individual Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_5_MATLAB/M3/tasks/ind_1/a/instructions.html">16.3.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_5_MATLAB/M3/tasks/ind_2/a/instructions.html">16.3.2. Task 2</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../../../Part_5_MATLAB/M4/0_overview.html">17. <strong class="program">MATLAB</strong> 4</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../Part_5_MATLAB/M4/1_pre-class_material.html">17.1. Pre-Class Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_5_MATLAB/M4/1.1_materials.html">17.1.1. Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_5_MATLAB/M4/tasks/pre_0/a/instructions.html">17.1.2. Task 0</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../Part_5_MATLAB/M4/2_team_assignments.html">17.2. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_5_MATLAB/M4/tasks/team_1/a/instructions.html">17.2.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_5_MATLAB/M4/tasks/team_2/a/instructions.html">17.2.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_5_MATLAB/M4/tasks/team_3/a/instructions.html">17.2.3. Task 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../Part_5_MATLAB/M4/3_ind_assignments.html">17.3. Individual Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_5_MATLAB/M4/tasks/ind_1/a/instructions.html">17.3.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../Part_5_MATLAB/M4/tasks/ind_2/a/instructions.html">17.3.2. Task 2</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Individual Project</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../../../Part_6_Individual_Project/M1/0_overview.html">18. Individual Project</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../Part_6_Individual_Project/M1/1_proposal_guidelines.html">18.1. Proposal - 5 points</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../Part_6_Individual_Project/M1/2_project_guidelines.html">18.2. Guidelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../Part_6_Individual_Project/M1/3_report_guidelines.html">18.3. Report - 25 points</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../Part_6_Individual_Project/M1/4_demo_rubric.html">18.4. Demo - 80 points</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendices</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../../../../Appendices/issues.html">Issues</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../Appendices/contributors.html">Contributors</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+<a href="https://github.com/Purdue-ENGR-13300/2025-fall/issues/new?title=Issue%20on%20page%20%2FPart_4_Team_Project/M2/tasks/team_3/a/instructions.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button"
+   title="Open an issue"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+
+</a>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Task 3</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">Learning Objectives</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-instructions">Task Instructions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-feature-extraction">Step 1: Feature Extraction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-main-function">Step 2: Main Function</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-output">Sample Output</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <p><span class="raw-html"><div class="d-none"></span></p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\newcommand\blank{~\underline{\hspace{1.2cm}}~}\\% Bold symbols (vectors)
+\newcommand\bs[1]{\mathbf{#1}}\\% Differential
+\newcommand\dd[2][]{\mathrm{d}^{#1}{#2}}  % use as \dd, \dd{x}, or \dd[2]{x}\\% Poor man's siunitx
+\newcommand\unit[1]{\mathrm{#1}}
+\newcommand\num[1]{#1}
+\newcommand\qty[2]{#1~\unit{#2}}\\\newcommand\per{/}
+\newcommand\squared{{}^2}
+\newcommand\cubed{{}^3}
+%
+% Scale
+\newcommand\milli{\unit{m}}
+\newcommand\centi{\unit{c}}
+\newcommand\kilo{\unit{k}}
+\newcommand\mega{\unit{M}}
+%
+% Percent
+\newcommand\percent{\unit{\%}}
+%
+% Angle
+\newcommand\radian{\unit{rad}}
+\newcommand\degree{\unit{{\kern-4mu}^\circ}}
+%
+% Time
+\newcommand\second{\unit{s}}
+\newcommand\s{\second}
+\newcommand\minute{\unit{min}}
+\newcommand\hour{\unit{h}}
+%
+% Distance
+\newcommand\meter{\unit{m}}
+\newcommand\m{\meter}
+\newcommand\inch{\unit{in}}
+\newcommand\foot{\unit{ft}}
+%
+% Force
+\newcommand\newton{\unit{N}}
+\newcommand\kip{\unit{kip}} % kilopound in &quot;freedom&quot; units - edit made by Sri
+%
+% Mass
+\newcommand\gram{\unit{g}}
+\newcommand\g{\gram}
+\newcommand\kilogram{\unit{kg}}
+\newcommand\kg{\kilogram}
+\newcommand\grain{\unit{grain}}
+\newcommand\ounce{\unit{oz}}
+%
+% Temperature
+\newcommand\kelvin{\unit{K}}
+\newcommand\K{\kelvin}
+\newcommand\celsius{\unit{{}^\circ C}}
+\newcommand\C{\celsius}
+\newcommand\fahrenheit{\unit{{}^\circ F}}
+\newcommand\F{\fahrenheit}
+%
+% Area
+\newcommand\sqft{\unit{sq\,\foot}}  % square foot
+%
+% Volume
+\newcommand\liter{\unit{L}}
+\newcommand\gallon{\unit{gal}}
+%
+% Frequency
+\newcommand\hertz{\unit{Hz}}
+\newcommand\rpm{\unit{rpm}}
+%
+% Voltage
+\newcommand\volt{\unit{V}}
+\newcommand\V{\volt}
+\newcommand\millivolt{\milli\volt}
+\newcommand\mV{\milli\volt}
+\newcommand\kilovolt{\kilo\volt}
+\newcommand\kV{\kilo\volt}
+%
+% Current
+\newcommand\ampere{\unit{A}}
+\newcommand\A{\ampere}
+\newcommand\milliampereA{\milli\ampere}
+\newcommand\mA{\milli\ampere}
+\newcommand\kiloampereA{\kilo\ampere}
+\newcommand\kA{\kilo\ampere}
+%
+% Resistance
+\newcommand\ohm{\Omega}
+\newcommand\milliohm{\milli\ohm}
+\newcommand\kiloohm{\kilo\ohm} % correct SI spelling
+\newcommand\kilohm{\kilo\ohm} % &quot;American&quot; spelling used in siunitx
+\newcommand\megaohm{\mega\ohm} % correct SI spelling
+\newcommand\megohm{\mega\ohm} % &quot;American&quot; spelling used in siunitx
+%
+% Capacitance
+\newcommand\farad{\unit{F}}
+\newcommand\F{\farad}
+\newcommand\microfarad{\micro\farad}
+\newcommand\muF{\micro\farad}
+%
+% Inductance
+\newcommand\henry{\unit{H}}
+\newcommand\H{\henry}
+\newcommand\millihenry{\milli\henry}
+\newcommand\mH{\milli\henry}
+%
+% Power
+\newcommand\watt{\unit{W}}
+\newcommand\W{\watt}
+\newcommand\milliwatt{\milli\watt}
+\newcommand\mW{\milli\watt}
+\newcommand\kilowatt{\kilo\watt}
+\newcommand\kW{\kilo\watt}
+%
+% Energy
+\newcommand\joule{\unit{J}}
+\newcommand\J{\joule}
+%
+% Composite units
+%
+% Torque
+\newcommand\ozin{\unit{\ounce}\,\unit{in}}
+\newcommand\newtonmeter{\unit{\newton\,\meter}}
+%
+% Pressure
+\newcommand\psf{\unit{psf}}  % pounds per square foot
+\newcommand\pcf{\unit{pcf}}  % pounds per cubic foot
+\newcommand\pascal{\unit{Pa}}
+\newcommand\Pa{\pascal}
+\newcommand\ksi{\unit{ksi}} % kilopound per square inch
+\newcommand\bar{\unit{bar}}
+\end{aligned}\end{align} \]</div>
+<p><span class="raw-html"></div></span></p>
+<p>Oct 16, 2025 | 819 words | 8 min read</p>
+<section class="tex2jax_ignore mathjax_ignore" id="task-3">
+<span id="tp-m2-team-task-3"></span><h1><span class="section-number">12.2.3. </span>Task 3<a class="headerlink" href="#task-3" title="Link to this heading">#</a></h1>
+<section id="learning-objectives">
+<h2>Learning Objectives<a class="headerlink" href="#learning-objectives" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Extract color features from an image</p></li>
+<li><p>Create a dataset of these extracted features</p></li>
+<li><p>Use the pandas library to read data, apply functions, and build a final feature dataset.</p></li>
+</ul>
+</section>
+<section id="task-instructions">
+<h2>Task Instructions<a class="headerlink" href="#task-instructions" title="Link to this heading">#</a></h2>
+<p>Save the flowcharts for each of your tasks in
+<span class="pasted-text">tp2_team_3_teamnumber.pdf</span>. You will also
+need to include these flowcharts in your final report.</p>
+<p>In this task, you’ll build a complete data processing pipeline. Your script will read a CSV metadata file, iterate through the specified image paths, clean each image, convert it to the HSV color space, and extract statistical features. Finally, you’ll combine these features with the original metadata to create a final, analysis-ready dataset. You will later use this dataset to train and test your machine learning models. Remember to use the functions you implemented in <a class="reference internal" href="../../../../M1/tasks/team_3/a/instructions.html#tp-m1-team-task-3"><span class="std std-numref">Section 11.2.3</span></a>.</p>
+<p>Additionally, you will create a scatter plot to visualize the relationship between two selected features, with points colored based on their class labels.</p>
+<p>This task will require you to use the <code class="code highlight python docutils literal highlight-python"><span class="n">pandas</span></code> library, which is a powerful tool for data manipulation and analysis in <strong class="program">Python</strong>. If you are unfamiliar with <code class="code highlight python docutils literal highlight-python"><span class="n">pandas</span></code>, refer to the materials provided in <a class="reference internal" href="../../../1.1_materials.html#tp-m2-team-project-1-materials"><span class="std std-numref">Section 12.1.1</span></a>.</p>
+</section>
+<section id="step-1-feature-extraction">
+<h2>Step 1: Feature Extraction<a class="headerlink" href="#step-1-feature-extraction" title="Link to this heading">#</a></h2>
+<p>Create a function named <code class="code highlight python docutils literal highlight-python"><span class="n">extract_features</span></code>:</p>
+<ul class="simple">
+<li><p>Argument: A single NumPy array representing a cleaned (e.g., 100x100) RGB image</p></li>
+<li><p>Returns: A list containing eight statistical features
+The functions should first convert the input RGB image to the HSV color space using the
+<code class="code highlight python docutils literal highlight-python"><span class="n">convert_to_hsv</span></code> function you developed previously.  From the HSV image, separate the
+Hue, Saturation, and Value channels.  For each of the three channels, calculate its mean
+and standard deviation. Additionally, convert the RGB image to grayscale. Using the grayscale image and the functions provided below, detect whether a circle is present and the number of lines present in the image.</p></li>
+</ul>
+<div class="note admonition">
+<p class="admonition-title">Note</p>
+<p><strong>Code Snippet:</strong> The code snippet below demonstrates how to detect circles and count the number of lines given a grayscale image. Read more about <code class="code highlight python docutils literal highlight-python"><span class="n">OpenCV</span></code> in <a class="reference internal" href="../../../../../Part_3_Python/M4/1.1_materials.html#py-m4-python-4-materials"><span class="std std-numref">Section 10.1.1</span></a>.</p>
+</div>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">cv2</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">detect_circles</span><span class="p">(</span><span class="n">gray_img</span><span class="p">):</span>
+<span class="w"> </span><span class="sd">&quot;&quot;&quot;Detects if a large circle is present. Returns 1 if found, 0 otherwise.&quot;&quot;&quot;</span>
+ <span class="c1"># Hough Circles works best on a grayscale, slightly blurred image</span>
+ <span class="c1"># Apply a Gaussian blur to reduce noise</span>
+ <span class="n">blurred_img</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">gaussian_filter</span><span class="p">(</span><span class="n">gray_img</span><span class="p">,</span> <span class="n">sigma</span><span class="o">=</span><span class="mf">1.5</span><span class="p">))</span>
+
+ <span class="c1"># Detect circles</span>
+ <span class="n">circles</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">HoughCircles</span><span class="p">(</span>
+     <span class="n">blurred_img</span><span class="p">,</span>
+     <span class="n">cv2</span><span class="o">.</span><span class="n">HOUGH_GRADIENT</span><span class="p">,</span>
+     <span class="n">dp</span><span class="o">=</span><span class="mf">1.2</span><span class="p">,</span>  <span class="c1"># Inverse ratio of accumulator resolution</span>
+     <span class="n">minDist</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span>  <span class="c1"># Minimum distance between centers of detected circles</span>
+     <span class="n">param1</span><span class="o">=</span><span class="mi">150</span><span class="p">,</span>  <span class="c1"># Upper threshold for the internal Canny edge detector</span>
+     <span class="n">param2</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span>  <span class="c1"># Threshold for center detection</span>
+     <span class="n">minRadius</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span>  <span class="c1"># Minimum circle radius to detect</span>
+     <span class="n">maxRadius</span><span class="o">=</span><span class="mi">50</span>  <span class="c1"># Maximum circle radius to detect</span>
+ <span class="p">)</span>
+
+ <span class="c1"># Return 1 if any circles are found, otherwise 0</span>
+ <span class="k">return</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">circles</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="k">else</span> <span class="mi">0</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">count_lines</span><span class="p">(</span><span class="n">gray_img</span><span class="p">):</span>
+<span class="w"> </span><span class="sd">&quot;&quot;&quot;Counts the number of lines in an image using Hough Line Transform.&quot;&quot;&quot;</span>
+ <span class="c1"># Edge detection via sobel filtering is a prerequisite for Hough Lines</span>
+ <span class="n">edges</span> <span class="o">=</span> <span class="n">sobel_filter</span><span class="p">(</span><span class="n">gray_img</span><span class="p">)</span>
+
+ <span class="c1"># Detect lines using the edge map</span>
+ <span class="n">lines</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">HoughLinesP</span><span class="p">(</span><span class="n">edges</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span> <span class="o">/</span> <span class="mi">180</span><span class="p">,</span> <span class="n">threshold</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">minLineLength</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">maxLineGap</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+
+ <span class="c1"># Return the number of lines found</span>
+ <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="n">lines</span><span class="p">)</span> <span class="k">if</span> <span class="n">lines</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="k">else</span> <span class="mi">0</span>
+</pre></div>
+</div>
+<p>Finally, return these eight calculated values in a list, in the following order:
+<code class="docutils literal notranslate"><span class="pre">hue_mean</span></code>, <code class="docutils literal notranslate"><span class="pre">hue_std</span></code>, <code class="docutils literal notranslate"><span class="pre">saturation_mean</span></code>, <code class="docutils literal notranslate"><span class="pre">saturation_std</span></code>, <code class="docutils literal notranslate"><span class="pre">value_mean</span></code>, <code class="docutils literal notranslate"><span class="pre">value_std</span></code>, <code class="docutils literal notranslate"><span class="pre">number_lines</span></code>, <code class="docutils literal notranslate"><span class="pre">has_circle</span></code></p>
+</section>
+<section id="step-2-main-function">
+<h2>Step 2: Main Function<a class="headerlink" href="#step-2-main-function" title="Link to this heading">#</a></h2>
+<p>Create a <code class="code highlight python docutils literal highlight-python"><span class="n">main</span></code> function that orchestrates the entire data processing pipeline.
+It should collect the following inputs from the user:</p>
+<ul class="simple">
+<li><p>the path to the image dataset folder</p></li>
+<li><p>the name of the metadata CSV file</p></li>
+<li><p>the name of the output CSV file to save the dataset of extracted features</p></li>
+<li><p>the name of an x-axis feature for plotting</p></li>
+<li><p>the name of a y-axis feature for plotting</p></li>
+</ul>
+<p>The function should load the metadata into a DataFrame using <code class="code highlight python docutils literal highlight-python"><span class="n">pandas</span><span class="o">.</span><span class="n">read_csv</span><span class="p">()</span></code>.
+Print the head of this DataFrame to verify it loaded correctly.</p>
+<p>Process each row of the DataFrame. Extract the image path. Load and clean the image using
+previously created functions <code class="code highlight python docutils literal highlight-python"><span class="n">load_img</span></code> and <code class="code highlight python docutils literal highlight-python"><span class="n">clean_image</span></code>. Then use the <code class="code highlight python docutils literal highlight-python"><span class="n">extract_features</span></code> function to get the
+eight features for each image and store them along with the image path and its class ID. That
+is, the dataset you create should have 10 columns where for each row you store the features,
+image path, and class ID for each image. Save this dataset as a new csv file.</p>
+<div class="note admonition">
+<p class="admonition-title">Note</p>
+<p>You may find the <code class="code highlight python docutils literal highlight-python"><span class="n">pandas</span><span class="o">.</span><span class="n">DataFrame</span><span class="o">.</span><span class="n">apply</span><span class="p">()</span></code> function useful for applying the feature extraction function to each row of the metadata DataFrame. Read <a class="reference external" href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.apply.html#pandas-dataframe-apply">the docs</a> if you wish to use this function.</p>
+</div>
+<div class="hint admonition">
+<p class="admonition-title">Hint</p>
+<p>Once you get to this stage, you may realize that the feature extraction process is slow. This is because image processing is computationally intensive and you are processing one image at a time.</p>
+<p>Instead of recomputing the features every time you run your script, you can save the dataset of extracted features to a CSV file. Then, in future runs, you can simply load this CSV file directly if it exists. You may find <a class="reference internal" href="../../../../../Part_3_Python/M4/1.1_materials.html#py-m4-materials-pathlib"><span class="std std-ref">Pathlib</span></a> useful for checking if a file exists.</p>
+<p>This approach is common in data science workflows to save time and computational resources.</p>
+</div>
+<p>Print the shape and the head of the final dataset to show the result.</p>
+<p>Finally, the <code class="code highlight python docutils literal highlight-python"><span class="n">main</span></code> function should prompt the user for two feature names which will be used for plotting. Use these feature names to create a scatter plot of the two features using <code class="code highlight python docutils literal highlight-python"><span class="n">plt</span><span class="o">.</span><span class="n">scatter</span></code>. Stop sign images must be plotted as red points, and right turns must be plotted in blue. Make sure to label the axes appropriately and include a legend.</p>
+<div class="hint admonition">
+<p class="admonition-title">Hint</p>
+<p>To color the points based on their class, use the {python}’ClassId’ column. The <code class="code highlight python docutils literal highlight-python"><span class="n">alpha</span></code> parameter in <code class="code highlight python docutils literal highlight-python"><span class="n">plt</span><span class="o">.</span><span class="n">scatter</span></code> should be set to <code class="docutils literal notranslate"><span class="pre">0.6</span></code> to make the points semi-transparent and thus show the concentration.</p>
+</div>
+<p>Use the files provided in the <a class="reference internal" href="#tp-m2-task-3-reference-dataset"><span class="std std-numref">Table 12.9</span></a>.</p>
+<p>Save your program as
+<span class="pasted-text">tp2_team_3_teamnumber.py</span>.</p>
+<div class="pst-scrollable-table-container"><table class="table" id="tp-m2-task-3-reference-dataset">
+<caption><span class="caption-number">Table 12.9 </span><span class="caption-text">Dataset</span><a class="headerlink" href="#tp-m2-task-3-reference-dataset" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head text-center"><p>File Name</p></th>
+<th class="head text-left"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p><a class="reference external" href="https://github.com/Purdue-ENGR-13300/content/releases/download/ML_Dataset_v0.1/ML_Images.zip">ML_Images.zip</a></p></td>
+<td class="text-left"><p>Zip file containing all of the training &amp; testing images for Checkpoint 3</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p><a class="reference download internal" download="" href="../../../../../_downloads/ea76e6bdce13957f5fceb77db23419b6/img_metadata.csv"><code class="xref download docutils literal notranslate"><span class="pre">img_metadata.csv</span></code></a></p></td>
+<td class="text-left"><p>This csv file contains class labels (0 = STOP &amp; 1 = RIGHT) for each image</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<section id="sample-output">
+<span id="mod-part-4-team-project-m2-team-3-a-sample-output"></span><h3>Sample Output<a class="headerlink" href="#sample-output" title="Link to this heading">#</a></h3>
+<p>Use the values in
+<a class="reference internal" href="#tab-part-4-team-project-m2-team-3-a-test-cases"><span class="std std-numref">Table 12.10</span></a> below to test
+your program.</p>
+<div class="pst-scrollable-table-container"><table class="test-case-table table" id="tab-part-4-team-project-m2-team-3-a-test-cases">
+<caption><span class="caption-number">Table 12.10 </span><span class="caption-text">Test Cases</span><a class="headerlink" href="#tab-part-4-team-project-m2-team-3-a-test-cases" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head text-center"><p>Case</p></th>
+<th class="head text-center"><p>dataset</p></th>
+<th class="head text-center"><p>metadata</p></th>
+<th class="head text-center"><p>output_path</p></th>
+<th class="head text-center"><p>xfeature</p></th>
+<th class="head text-center"><p>yfeature</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>1</p></td>
+<td class="text-center"><p>ML_Images</p></td>
+<td class="text-center"><p>img_metadata.csv</p></td>
+<td class="text-center"><p>img_features.csv</p></td>
+<td class="text-center"><p>hue_mean</p></td>
+<td class="text-center"><p>saturation_mean</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>2</p></td>
+<td class="text-center"><p>ML_Images</p></td>
+<td class="text-center"><p>img_metadata.csv</p></td>
+<td class="text-center"><p>img_features.csv</p></td>
+<td class="text-center"><p>value_mean</p></td>
+<td class="text-center"><p>num_lines</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>3</p></td>
+<td class="text-center"><p>ML_Images</p></td>
+<td class="text-center"><p>img_metadata.csv</p></td>
+<td class="text-center"><p>img_features.csv</p></td>
+<td class="text-center"><p>hue_mean</p></td>
+<td class="text-center"><p>hue_std</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Ensure your program’s output matches the provided samples exactly.
+This includes all characters, white space, and punctuation. In the
+samples, user input is <span class=user-input>highlighted like
+this</span> for clarity, but your program should not highlight user
+input in this way.</p>
+<div class="sample-output admonition">
+<p class="admonition-title">Case 1 Sample Output</p>
+<p><span class="raw-html">$ <span class='user-input'>python3 tp2_team_3_teamnumber.py</span></span>
+<span class="raw-html">Enter the name of the dataset folder:</span>
+<span class="raw-html"><span class='user-input'>ML_Images</span></span>
+<span class="raw-html">Enter the name of the metadata file:</span>
+<span class="raw-html"><span class='user-input'>img_metadata.csv</span></span>
+<span class="raw-html">Enter the name of output csv features file:</span>
+<span class="raw-html"><span class='user-input'>img_features.csv</span></span></p>
+<p><span class="raw-html">Training Metadata DataFrame:</span>
+<span class="raw-html">   Width  Height  ClassId               Path</span>
+<span class="raw-html">0     26      29        1  1_00015_00000.png</span>
+<span class="raw-html">1     27      30        1  1_00015_00001.png</span>
+<span class="raw-html">2     27      30        1  1_00015_00002.png</span>
+<span class="raw-html">3     28      31        1  1_00015_00003.png</span>
+<span class="raw-html">4     28      30        1  1_00015_00004.png</span></p>
+<p><span class="raw-html">Features have been extracted and saved to img_features.csv</span></p>
+<p><span class="raw-html">Feature Dataset Shape:</span>
+<span class="raw-html">(1469, 10)</span></p>
+<p><span class="raw-html">Feature Dataset Head:</span>
+<span class="raw-html">   hue_mean    hue_std  saturation_mean  saturation_std  value_mean  value_std  num_lines  has_circle               Path  ClassId</span>
+<span class="raw-html">0   78.5739  74.875475          88.3607       76.497835     16.2115  17.267495        0.0         0.0  1_00015_00000.png        1</span>
+<span class="raw-html">1   71.8692  73.134396          91.1982       74.631321     16.4933  17.784649        0.0         0.0  1_00015_00001.png        1</span>
+<span class="raw-html">2   78.3621  73.230186          91.6578       76.665620     16.7615  17.559311        0.0         0.0  1_00015_00002.png        1</span>
+<span class="raw-html">3   77.3715  71.860282          92.6498       75.498783     16.5275  17.430635        0.0         0.0  1_00015_00003.png        1</span>
+<span class="raw-html">4   81.7215  70.873320         101.1194       77.180979     17.8706  18.428946        0.0         0.0  1_00015_00004.png        1</span></p>
+<p><span class="raw-html">Enter the column to use as the x-axis feature:</span>
+<span class="raw-html"><span class='user-input'>hue_mean</span></span></p>
+<p><span class="raw-html">Enter the column to use as the y-axis feature:</span>
+<span class="raw-html"><span class='user-input'>saturation_mean</span></span></p>
+<p><span class="raw-html">Scatter plot saved to KNN_feature_space.png</span></p>
+</div>
+<figure class="align-default" id="id1">
+<img alt="Case_1_KNN_feature_space.png" src="../../../../../_images/Case_1_KNN_feature_space.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 12.20 </span><span class="caption-text">Case_1_KNN_feature_space.png</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<div class="sample-output admonition">
+<p class="admonition-title">Case 2 Sample Output</p>
+<p><span class="raw-html">$ <span class='user-input'>python3 tp2_team_3_teamnumber.py</span></span>
+<span class="raw-html">Enter the name of the dataset folder:</span>
+<span class="raw-html"><span class='user-input'>ML_Images</span></span>
+<span class="raw-html">Enter the name of the metadata file:</span>
+<span class="raw-html"><span class='user-input'>img_metadata.csv</span></span>
+<span class="raw-html">Enter the name of output csv features file:</span>
+<span class="raw-html"><span class='user-input'>img_features.csv</span></span></p>
+<p><span class="raw-html">Training Metadata DataFrame:</span>
+<span class="raw-html">   Width  Height  ClassId               Path</span>
+<span class="raw-html">0     26      29        1  1_00015_00000.png</span>
+<span class="raw-html">1     27      30        1  1_00015_00001.png</span>
+<span class="raw-html">2     27      30        1  1_00015_00002.png</span>
+<span class="raw-html">3     28      31        1  1_00015_00003.png</span>
+<span class="raw-html">4     28      30        1  1_00015_00004.png</span></p>
+<p><span class="raw-html">Features have been extracted and saved to img_features.csv</span></p>
+<p><span class="raw-html">Feature Dataset Shape:</span>
+<span class="raw-html">(1469, 10)</span></p>
+<p><span class="raw-html">Feature Dataset Head:</span>
+<span class="raw-html">   hue_mean    hue_std  saturation_mean  saturation_std  value_mean  value_std  num_lines  has_circle               Path  ClassId</span>
+<span class="raw-html">0   78.5739  74.875475          88.3607       76.497835     16.2115  17.267495        0.0         0.0  1_00015_00000.png        1</span>
+<span class="raw-html">1   71.8692  73.134396          91.1982       74.631321     16.4933  17.784649        0.0         0.0  1_00015_00001.png        1</span>
+<span class="raw-html">2   78.3621  73.230186          91.6578       76.665620     16.7615  17.559311        0.0         0.0  1_00015_00002.png        1</span>
+<span class="raw-html">3   77.3715  71.860282          92.6498       75.498783     16.5275  17.430635        0.0         0.0  1_00015_00003.png        1</span>
+<span class="raw-html">4   81.7215  70.873320         101.1194       77.180979     17.8706  18.428946        0.0         0.0  1_00015_00004.png        1</span></p>
+<p><span class="raw-html">Enter the column to use as the x-axis feature:</span>
+<span class="raw-html"><span class='user-input'>value_mean</span></span></p>
+<p><span class="raw-html">Enter the column to use as the y-axis feature:</span>
+<span class="raw-html"><span class='user-input'>num_lines</span></span></p>
+<p><span class="raw-html">Scatter plot saved to KNN_feature_space.png</span></p>
+</div>
+<figure class="align-default" id="id2">
+<img alt="Case_2_KNN_feature_space.png" src="../../../../../_images/Case_2_KNN_feature_space.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 12.21 </span><span class="caption-text">Case_2_KNN_feature_space.png</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<div class="sample-output admonition">
+<p class="admonition-title">Case 3 Sample Output</p>
+<p><span class="raw-html">$ <span class='user-input'>python3 tp2_team_3_teamnumber.py</span></span>
+<span class="raw-html">Enter the name of the dataset folder:</span>
+<span class="raw-html"><span class='user-input'>ML_Images</span></span>
+<span class="raw-html">Enter the name of the metadata file:</span>
+<span class="raw-html"><span class='user-input'>img_metadata.csv</span></span>
+<span class="raw-html">Enter the name of output csv features file:</span>
+<span class="raw-html"><span class='user-input'>img_features.csv</span></span></p>
+<p><span class="raw-html">Training Metadata DataFrame:</span>
+<span class="raw-html">   Width  Height  ClassId               Path</span>
+<span class="raw-html">0     26      29        1  1_00015_00000.png</span>
+<span class="raw-html">1     27      30        1  1_00015_00001.png</span>
+<span class="raw-html">2     27      30        1  1_00015_00002.png</span>
+<span class="raw-html">3     28      31        1  1_00015_00003.png</span>
+<span class="raw-html">4     28      30        1  1_00015_00004.png</span></p>
+<p><span class="raw-html">Features have been extracted and saved to img_features.csv</span></p>
+<p><span class="raw-html">Feature Dataset Shape:</span>
+<span class="raw-html">(1469, 10)</span></p>
+<p><span class="raw-html">Feature Dataset Head:</span>
+<span class="raw-html">   hue_mean    hue_std  saturation_mean  saturation_std  value_mean  value_std  num_lines  has_circle               Path  ClassId</span>
+<span class="raw-html">0   78.5739  74.875475          88.3607       76.497835     16.2115  17.267495        0.0         0.0  1_00015_00000.png        1</span>
+<span class="raw-html">1   71.8692  73.134396          91.1982       74.631321     16.4933  17.784649        0.0         0.0  1_00015_00001.png        1</span>
+<span class="raw-html">2   78.3621  73.230186          91.6578       76.665620     16.7615  17.559311        0.0         0.0  1_00015_00002.png        1</span>
+<span class="raw-html">3   77.3715  71.860282          92.6498       75.498783     16.5275  17.430635        0.0         0.0  1_00015_00003.png        1</span>
+<span class="raw-html">4   81.7215  70.873320         101.1194       77.180979     17.8706  18.428946        0.0         0.0  1_00015_00004.png        1</span></p>
+<p><span class="raw-html">Enter the column to use as the x-axis feature:</span>
+<span class="raw-html"><span class='user-input'>hue_mean</span></span></p>
+<p><span class="raw-html">Enter the column to use as the y-axis feature:</span>
+<span class="raw-html"><span class='user-input'>hue_std</span></span></p>
+<p><span class="raw-html">Scatter plot saved to KNN_feature_space.png</span></p>
+</div>
+<figure class="align-default" id="id3">
+<img alt="Case_3_KNN_feature_space.png" src="../../../../../_images/Case_3_KNN_feature_space.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 12.22 </span><span class="caption-text">Case_3_KNN_feature_space.png</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<div class="pst-scrollable-table-container"><table class="deliverables table" id="tab-tp-m2-team-3-deliverables">
+<caption><span class="caption-number">Table 12.11 </span><span class="caption-text">Deliverables</span><a class="headerlink" href="#tab-tp-m2-team-3-deliverables" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Deliverables</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="pasted-text">tp2_team_3_teamnumber.pdf</span></p></td>
+<td><p>Flowchart(s) for this task.</p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="pasted-text">tp2_team_3_teamnumber.py</span></p></td>
+<td><p>Your completed <strong class="program">Python</strong> code.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./Part_4_Team_Project/M2/tasks/team_3/a"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../../team_2/a/instructions.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">12.2.2. </span>Task 2</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../../../../M3/0_overview.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">13. </span>Demo</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">Learning Objectives</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-instructions">Task Instructions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-feature-extraction">Step 1: Feature Extraction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-main-function">Step 2: Main Function</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-output">Sample Output</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By <a href="/2025-fall/Appendices/contributors.html">Contributors</a>
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025 All rights reserved..
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
