@@ -1,0 +1,1445 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>15.1.1. Materials &#8212; Purdue University ENGR 13300</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=f14e7167" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../../_static/documentation_options.js?v=a8e58a58"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Part_5_MATLAB/M1/1.1_materials';</script>
+    <link rel="icon" href="../../_static/avatar.png"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="15.1.2. Task 0" href="tasks/pre_0/a/instructions.html" />
+    <link rel="prev" title="15.1. Pre-Class Assignments" href="1_pre-class_material.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo.png" class="logo__image only-light" alt="Purdue University ENGR 13300 - Home"/>
+    <script>document.write(`<img src="../../_static/logo.png" class="logo__image only-dark" alt="Purdue University ENGR 13300 - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../intro.html">
+                    Transforming Ideas to Innovation
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Start Here</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../Start_Here/syllabus.html">Syllabus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Start_Here/meet_the_team.html">Meet Your Instructional Team</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Start_Here/help_sessions.html">Help Sessions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Start_Here/course_schedule.html">Course Schedule</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Start_Here/course_software/course_software.html">Course Software</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">MS Excel</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Part_1_Excel/M1/0_overview.html">1. <strong class="program">MS Excel</strong> 1</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_1_Excel/M1/1_pre-class_material.html">1.1. Pre-Class Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_1_Excel/M1/1.1_materials.html">1.1.1. Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_1_Excel/M1/tasks/pre_0/a/instructions.html">1.1.2. Task 0</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_1_Excel/M1/2_team_assignments.html">1.2. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_1_Excel/M1/tasks/team_1/a/instructions.html">1.2.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_1_Excel/M1/tasks/team_2/a/instructions.html">1.2.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_1_Excel/M1/tasks/team_3/a/instructions.html">1.2.3. Task 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_1_Excel/M1/3_ind_assignments.html">1.3. Individual Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_1_Excel/M1/tasks/ind_1/a/instructions.html">1.3.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_1_Excel/M1/tasks/ind_2/a/instructions.html">1.3.2. Task 2</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Part_1_Excel/M2/0_overview.html">2. <strong class="program">MS Excel</strong> 2</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_1_Excel/M2/1_pre-class_material.html">2.1. Pre-Class Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_1_Excel/M2/1.1_materials.html">2.1.1. Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_1_Excel/M2/tasks/pre_0/a/instructions.html">2.1.2. Task 0</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_1_Excel/M2/2_team_assignments.html">2.2. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_1_Excel/M2/tasks/team_1/a/instructions.html">2.2.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_1_Excel/M2/tasks/team_2/a/instructions.html">2.2.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_1_Excel/M2/tasks/team_3/a/instructions.html">2.2.3. Task 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_1_Excel/M2/3_ind_assignments.html">2.3. Individual Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_1_Excel/M2/tasks/ind_1/a/instructions.html">2.3.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_1_Excel/M2/tasks/ind_2/a/instructions.html">2.3.2. Task 2</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Part_1_Excel/M3/0_overview.html">3. <strong class="program">MS Excel</strong> 3</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_1_Excel/M3/1_pre-class_material.html">3.1. Pre-Class Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_1_Excel/M3/1.1_materials.html">3.1.1. Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_1_Excel/M3/tasks/pre_0/a/instructions.html">3.1.2. Task 0</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_1_Excel/M3/2_team_assignments.html">3.2. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_1_Excel/M3/tasks/team_1/a/instructions.html">3.2.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_1_Excel/M3/tasks/team_2/a/instructions.html">3.2.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_1_Excel/M3/tasks/team_3/a/instructions.html">3.2.3. Task 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_1_Excel/M3/3_ind_assignments.html">3.3. Individual Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_1_Excel/M3/tasks/ind_1/a/instructions.html">3.3.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_1_Excel/M3/tasks/ind_2/a/instructions.html">3.3.2. Task 2</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Dream Project</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../Part_2_Dream_Project/M1/0_overview.html">4. Dream Project</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Professional Preparation</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Part_2_Professional_Preparation/M1/0_overview.html">5. Professional Preparation</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_2_Professional_Preparation/M1/pwl_assignments.html">5.1. West Lafayette</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_2_Professional_Preparation/M1/activities/pwl_1/career_exploration_1.html">5.1.1. Career Exploration 1 (EYM)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_2_Professional_Preparation/M1/activities/pwl_2/career_exploration_2.html">5.1.2. Career Exploration 2 (EYM)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_2_Professional_Preparation/M1/activities/pwl_3/career_exploration_3.html">5.1.3. Career Exploration 3 (EYM)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_2_Professional_Preparation/M1/activities/pwl_4/personal_activity.html">5.1.4. Personal Activity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_2_Professional_Preparation/M1/activities/pwl_5/cultural_experience.html">5.1.5. Cultural Experience</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_2_Professional_Preparation/M1/pin_assignments.html">5.2. Indianapolis</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_2_Professional_Preparation/M1/activities/pin_1/major_exploration_1.html">5.2.1. Major Exploration 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_2_Professional_Preparation/M1/activities/pin_2/major_exploration_2.html">5.2.2. Major Exploration 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_2_Professional_Preparation/M1/activities/pin_3/personal_activity_1.html">5.2.3. Personal Activity 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_2_Professional_Preparation/M1/activities/pin_4/personal_activity_2.html">5.2.4. Personal Activity 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_2_Professional_Preparation/M1/activities/pin_5/cultural_experience.html">5.2.5. Cultural Experience</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_2_Professional_Preparation/M1/common_assignments.html">5.3. Common</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_2_Professional_Preparation/M1/activities/common_1/resume.html">5.3.1. Resume Preparation</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Teaming</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Part_2_Teaming/M1/0_overview.html">6. Teaming</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_2_Teaming/M1/2_team_assignments.html">6.1. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_2_Teaming/M1/tasks/team_1/instructions.html">6.1.1. Task 1</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_2_Teaming/M1/3_ind_assignments.html">6.2. Individual Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_2_Teaming/M1/tasks/ind_1/instructions.html">6.2.1. Task 1</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Python</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Part_3_Python/M1/0_overview.html">7. <strong class="program">Python</strong> 1</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_3_Python/M1/1_pre-class_material.html">7.1. Pre-Class Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_3_Python/M1/1.1_materials.html">7.1.1. Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_3_Python/M1/tasks/pre_0/a/instructions.html">7.1.2. Task 0</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_3_Python/M1/2_team_assignments.html">7.2. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_3_Python/M1/tasks/team_1/b/instructions.html">7.2.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_3_Python/M1/tasks/team_2/a/instructions.html">7.2.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_3_Python/M1/tasks/team_3/c/instructions.html">7.2.3. Task 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_3_Python/M1/3_ind_assignments.html">7.3. Individual Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_3_Python/M1/tasks/ind_1/a/instructions.html">7.3.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_3_Python/M1/tasks/ind_2/series_and_parallel_circuits/instructions.html">7.3.2. Task 2</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Part_3_Python/M2/0_overview.html">8. <strong class="program">Python</strong> 2</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_3_Python/M2/1_pre-class_material.html">8.1. Pre-Class Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_3_Python/M2/1.1_materials.html">8.1.1. Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_3_Python/M2/tasks/pre_0/a/instructions.html">8.1.2. Task 0</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_3_Python/M2/2_team_assignments.html">8.2. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_3_Python/M2/tasks/team_1/a/instructions.html">8.2.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_3_Python/M2/tasks/team_2/a/instructions.html">8.2.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_3_Python/M2/tasks/team_3/a/instructions.html">8.2.3. Task 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_3_Python/M2/3_ind_assignments.html">8.3. Individual Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_3_Python/M2/tasks/ind_1/a/instructions.html">8.3.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_3_Python/M2/tasks/ind_2/a/instructions.html">8.3.2. Task 2</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Part_3_Python/M3/0_overview.html">9. <strong class="program">Python</strong> 3</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_3_Python/M3/1_pre-class_material.html">9.1. Pre-Class Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_3_Python/M3/1.1_materials.html">9.1.1. Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_3_Python/M3/tasks/pre_0/a/instructions.html">9.1.2. Task 0</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_3_Python/M3/2_team_assignments.html">9.2. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_3_Python/M3/tasks/team_1/a/instructions.html">9.2.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_3_Python/M3/tasks/team_2/a/instructions.html">9.2.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_3_Python/M3/tasks/team_3/a/instructions.html">9.2.3. Task 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_3_Python/M3/3_ind_assignments.html">9.3. Individual Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_3_Python/M3/tasks/ind_1/llms/instructions.html">9.3.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_3_Python/M3/tasks/ind_2/a/instructions.html">9.3.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_3_Python/M3/tasks/ind_1/genotype/instructions.html">9.3.3. Task 3 (Bonus)</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Part_3_Python/M4/0_overview.html">10. <strong class="program">Python</strong> 4</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_3_Python/M4/1_pre-class_material.html">10.1. Pre-Class Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_3_Python/M4/1.1_materials.html">10.1.1. Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_3_Python/M4/tasks/pre_0/a/instructions.html">10.1.2. Task 0</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_3_Python/M4/2_team_assignments.html">10.2. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_3_Python/M4/tasks/team_1/a/instructions.html">10.2.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_3_Python/M4/tasks/team_2/a/instructions.html">10.2.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_3_Python/M4/tasks/team_3/a/instructions.html">10.2.3. Task 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_3_Python/M4/3_ind_assignments.html">10.3. Individual Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_3_Python/M4/tasks/ind_1/a/instructions.html">10.3.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_3_Python/M4/tasks/ind_2/a/instructions.html">10.3.2. Task 2</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Team Project</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Part_4_Team_Project/M1/0_overview.html">11. Checkpoint 1</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_4_Team_Project/M1/1_pre-class_material.html">11.1. Pre-Class Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_4_Team_Project/M1/1.1_materials.html">11.1.1. Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_4_Team_Project/M1/tasks/pre_0/a/instructions.html">11.1.2. Task 0</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_4_Team_Project/M1/2_team_assignments.html">11.2. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_4_Team_Project/M1/tasks/team_1/a/instructions.html">11.2.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_4_Team_Project/M1/tasks/team_2/a/instructions.html">11.2.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_4_Team_Project/M1/tasks/team_3/a/instructions.html">11.2.3. Task 3</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Part_4_Team_Project/M2/0_overview.html">12. Checkpoint 2</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_4_Team_Project/M2/1_pre-class_material.html">12.1. Pre-Class Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_4_Team_Project/M2/1.1_materials.html">12.1.1. Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_4_Team_Project/M2/tasks/pre_0/a/instructions.html">12.1.2. Task 0</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_4_Team_Project/M2/2_team_assignments.html">12.2. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_4_Team_Project/M2/tasks/team_1/a/instructions.html">12.2.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_4_Team_Project/M2/tasks/team_2/a/instructions.html">12.2.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_4_Team_Project/M2/tasks/team_3/a/instructions.html">12.2.3. Task 3</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Part_4_Team_Project/M3/0_overview.html">13. Checkpoint 3</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_4_Team_Project/M3/1_team_assignments.html">13.1. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_4_Team_Project/M3/tasks/team_1/a/instructions.html">13.1.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_4_Team_Project/M3/tasks/team_2/a/instructions.html">13.1.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_4_Team_Project/M3/tasks/team_3/a/instructions.html">13.1.3. Task 3</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_4_Team_Project/M3/tasks/team_4/a/instructions.html">13.1.4. Task 4</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Information Literacy</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Part_5_Information_Literacy/M1/0_overview.html">14. Information Literacy</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_5_Information_Literacy/M1/1_pre-class_material.html">14.1. Pre-Class Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_Information_Literacy/M1/1.1_materials.html">14.1.1. Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_Information_Literacy/M1/tasks/pre_0/instructions.html">14.1.2. Task 0</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_5_Information_Literacy/M1/2_team_assignments.html">14.2. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_Information_Literacy/M1/tasks/team_1/instructions.html">14.2.1. Task 1</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">MATLAB</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="0_overview.html">15. <strong class="program">MATLAB</strong> 1</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 current active has-children"><a class="reference internal" href="1_pre-class_material.html">15.1. Pre-Class Assignments</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l3 current active"><a class="current reference internal" href="#">15.1.1. Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tasks/pre_0/a/instructions.html">15.1.2. Task 0</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="2_team_assignments.html">15.2. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="tasks/team_1/a/instructions.html">15.2.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tasks/team_2/a/instructions.html">15.2.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tasks/team_3/a/instructions.html">15.2.3. Task 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="3_ind_assignments.html">15.3. Individual Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="tasks/ind_1/a/instructions.html">15.3.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tasks/ind_2/a/instructions.html">15.3.2. Task 2</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../M2/0_overview.html">16. <strong class="program">MATLAB</strong> 2</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../M2/1_pre-class_material.html">16.1. Pre-Class Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../M2/1.1_materials.html">16.1.1. Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../M2/tasks/pre_0/a/instructions.html">16.1.2. Task 0</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../M2/2_team_assignments.html">16.2. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../M2/tasks/team_1/a/instructions.html">16.2.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../M2/tasks/team_2/a/instructions.html">16.2.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../M2/tasks/team_3/a/instructions.html">16.2.3. Task 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../M2/3_ind_assignments.html">16.3. Individual Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../M2/tasks/ind_1/a/instructions.html">16.3.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../M2/tasks/ind_2/a/instructions.html">16.3.2. Task 2</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../M3/0_overview.html">17. <strong class="program">MATLAB</strong> 3</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../M3/1_pre-class_material.html">17.1. Pre-Class Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../M3/1.1_materials.html">17.1.1. Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../M3/tasks/pre_0/a/instructions.html">17.1.2. Task 0</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../M3/2_team_assignments.html">17.2. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../M3/tasks/team_1/a/instructions.html">17.2.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../M3/tasks/team_2/a/instructions.html">17.2.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../M3/tasks/team_3/a/instructions.html">17.2.3. Task 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../M3/3_ind_assignments.html">17.3. Individual Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../M3/tasks/ind_1/a/instructions.html">17.3.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../M3/tasks/ind_2/a/instructions.html">17.3.2. Task 2</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Individual Project</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Part_6_Individual_Project/M1/0_overview.html">18. Individual Project</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Part_6_Individual_Project/M1/1_proposal_guidelines.html">18.1. Proposal - 5 points</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Part_6_Individual_Project/M1/2_project_guidelines.html">18.2. Guidelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Part_6_Individual_Project/M1/3_report_guidelines.html">18.3. Report - 25 points</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Part_6_Individual_Project/M1/4_demo_rubric.html">18.4. Demo - 80 points</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendices</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../Appendices/issues.html">Issues</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Appendices/contributors.html">Contributors</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+<a href="https://github.com/Purdue-ENGR-13300/2025-fall/issues/new?title=Issue%20on%20page%20%2FPart_5_MATLAB/M1/1.1_materials.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button"
+   title="Open an issue"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+
+</a>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Materials</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reading">Reading</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#commenting-between-matlab-and-python">Commenting between MATLAB and Python</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#matlab-commenting">MATLAB Commenting</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#python-commenting">Python Commenting</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#character-and-string-arrays-in-matlab-vs-python">Character and String Arrays in MATLAB vs Python</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#definitions">Definitions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#string-literals-examples-matlab">String Literals Examples (MATLAB)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#common-operations-matlab-vs-python">Common Operations (MATLAB vs Python)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#string-methods-matlab">String Methods (MATLAB)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#control-flow-for-and-while-loops">Control Flow: <code class="docutils literal notranslate"><span class="pre">for</span></code> and <code class="docutils literal notranslate"><span class="pre">while</span></code> Loops</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#for-loops">For Loops</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#while-loops">While Loops</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#videos">Videos</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matlab-interface-introduction"><strong class="program">MATLAB</strong> Interface Introduction</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#algebraic-operations-in-matlab">Algebraic Operations in <strong class="program">MATLAB</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#built-in-functions">Built-in Functions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variable-names">Variable Names</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#assigning-vectors-and-matrices">Assigning Vectors and Matrices</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#array-indexing-copying-values">Array Indexing: Copying Values</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#array-indexing-replacing-values">Array Indexing: Replacing Values</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#scripts">Scripts</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-fprintf-command">The <code class="code highlight matlab docutils literal highlight-matlab"><span class="nb">fprintf</span></code> Command</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conditionals">Conditionals</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#loops-while-for">Loops (<code class="docutils literal notranslate"><span class="pre">while</span></code>/<code class="docutils literal notranslate"><span class="pre">for</span></code>):</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#element-by-element-operations">Element-by-element operations</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#concatenating-arrays">Concatenating arrays</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#publish-matlab-script">Publish MATLAB script</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matlab-in-vs-code">MATLAB in VS Code</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <p><span class="raw-html"><div class="d-none"></span></p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\newcommand\blank{~\underline{\hspace{1.2cm}}~}\\% Bold symbols (vectors)
+\newcommand\bs[1]{\mathbf{#1}}\\% Differential
+\newcommand\dd[2][]{\mathrm{d}^{#1}{#2}}  % use as \dd, \dd{x}, or \dd[2]{x}\\% Poor man's siunitx
+\newcommand\unit[1]{\mathrm{#1}}
+\newcommand\num[1]{#1}
+\newcommand\qty[2]{#1~\unit{#2}}\\\newcommand\per{/}
+\newcommand\squared{{}^2}
+\newcommand\cubed{{}^3}
+%
+% Scale
+\newcommand\milli{\unit{m}}
+\newcommand\centi{\unit{c}}
+\newcommand\kilo{\unit{k}}
+\newcommand\mega{\unit{M}}
+%
+% Percent
+\newcommand\percent{\unit{{\kern-4mu}\%}}
+%
+% Angle
+\newcommand\radian{\unit{rad}}
+\newcommand\degree{\unit{{\kern-4mu}^\circ}}
+%
+% Time
+\newcommand\second{\unit{s}}
+\newcommand\s{\second}
+\newcommand\minute{\unit{min}}
+\newcommand\hour{\unit{h}}
+%
+% Distance
+\newcommand\meter{\unit{m}}
+\newcommand\m{\meter}
+\newcommand\inch{\unit{in}}
+\newcommand\foot{\unit{ft}}
+%
+% Force
+\newcommand\newton{\unit{N}}
+\newcommand\kip{\unit{kip}} % kilopound in &quot;freedom&quot; units - edit made by Sri
+%
+% Mass
+\newcommand\gram{\unit{g}}
+\newcommand\g{\gram}
+\newcommand\kilogram{\unit{kg}}
+\newcommand\kg{\kilogram}
+\newcommand\grain{\unit{grain}}
+\newcommand\ounce{\unit{oz}}
+%
+% Temperature
+\newcommand\kelvin{\unit{K}}
+\newcommand\K{\kelvin}
+\newcommand\celsius{\unit{{}^\circ C}}
+\newcommand\C{\celsius}
+\newcommand\fahrenheit{\unit{{}^\circ F}}
+\newcommand\F{\fahrenheit}
+%
+% Area
+\newcommand\sqft{\unit{sq\,\foot}}  % square foot
+%
+% Volume
+\newcommand\liter{\unit{L}}
+\newcommand\gallon{\unit{gal}}
+%
+% Frequency
+\newcommand\hertz{\unit{Hz}}
+\newcommand\rpm{\unit{rpm}}
+%
+% Voltage
+\newcommand\volt{\unit{V}}
+\newcommand\V{\volt}
+\newcommand\millivolt{\milli\volt}
+\newcommand\mV{\milli\volt}
+\newcommand\kilovolt{\kilo\volt}
+\newcommand\kV{\kilo\volt}
+%
+% Current
+\newcommand\ampere{\unit{A}}
+\newcommand\A{\ampere}
+\newcommand\milliampereA{\milli\ampere}
+\newcommand\mA{\milli\ampere}
+\newcommand\kiloampereA{\kilo\ampere}
+\newcommand\kA{\kilo\ampere}
+%
+% Resistance
+\newcommand\ohm{\Omega}
+\newcommand\milliohm{\milli\ohm}
+\newcommand\kiloohm{\kilo\ohm} % correct SI spelling
+\newcommand\kilohm{\kilo\ohm} % &quot;American&quot; spelling used in siunitx
+\newcommand\megaohm{\mega\ohm} % correct SI spelling
+\newcommand\megohm{\mega\ohm} % &quot;American&quot; spelling used in siunitx
+%
+% Capacitance
+\newcommand\farad{\unit{F}}
+\newcommand\F{\farad}
+\newcommand\microfarad{\micro\farad}
+\newcommand\muF{\micro\farad}
+%
+% Inductance
+\newcommand\henry{\unit{H}}
+\newcommand\H{\henry}
+\newcommand\millihenry{\milli\henry}
+\newcommand\mH{\milli\henry}
+%
+% Power
+\newcommand\watt{\unit{W}}
+\newcommand\W{\watt}
+\newcommand\milliwatt{\milli\watt}
+\newcommand\mW{\milli\watt}
+\newcommand\kilowatt{\kilo\watt}
+\newcommand\kW{\kilo\watt}
+%
+% Energy
+\newcommand\joule{\unit{J}}
+\newcommand\J{\joule}
+%
+% Composite units
+%
+% Torque
+\newcommand\ozin{\unit{\ounce}\,\unit{in}}
+\newcommand\newtonmeter{\unit{\newton\,\meter}}
+%
+% Pressure
+\newcommand\psf{\unit{psf}}  % pounds per square foot
+\newcommand\pcf{\unit{pcf}}  % pounds per cubic foot
+\newcommand\pascal{\unit{Pa}}
+\newcommand\Pa{\pascal}
+\newcommand\ksi{\unit{ksi}} % kilopound per square inch
+\newcommand\bar{\unit{bar}}
+\end{aligned}\end{align} \]</div>
+<p><span class="raw-html"></div></span></p>
+<p>Dec 04, 2025 | 1056 words | 11 min read</p>
+<section class="tex2jax_ignore mathjax_ignore" id="materials">
+<h1><span class="section-number">15.1.1. </span>Materials<a class="headerlink" href="#materials" title="Link to this heading">#</a></h1>
+<section id="reading">
+<h2>Reading<a class="headerlink" href="#reading" title="Link to this heading">#</a></h2>
+<p>Follow the steps provided <a class="reference internal" href="../../Start_Here/course_software/course_software.html#start-here-course-software-matlab"><span class="std std-ref">here</span></a> to install <strong class="program">MATLAB</strong> on your system.</p>
+<p>Explore example programs in <strong class="program">MATLAB</strong>:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.mathworks.com/help/MATLAB/examples.html?category=getting-started-with-MATLAB&amp;amp;s_tid=CRUX_topnav">MATLAB Getting Started Examples</a></p></li>
+<li><p><a class="reference external" href="https://www.mathworks.com/help/matlab/matlab_prog/loop-control-statements.html">Loop Control Statements</a></p></li>
+</ul>
+<section id="commenting-between-matlab-and-python">
+<h3>Commenting between MATLAB and Python<a class="headerlink" href="#commenting-between-matlab-and-python" title="Link to this heading">#</a></h3>
+<p>One of the main differences that will be addressed the fastest will be how comments work inside of MATLAB versus Python</p>
+<p>In MATLAB, ‘%’ are used to make comment lines, whereas in Python, a ‘#’ is used.</p>
+<section id="matlab-commenting">
+<h4>MATLAB Commenting<a class="headerlink" href="#matlab-commenting" title="Link to this heading">#</a></h4>
+<div class="highlight-matlab notranslate"><div class="highlight"><pre><span></span><span class="c">% This is a comment line in MATLAB</span>
+<span class="n">charArray</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&#39;Hello&#39;</span><span class="w">      </span><span class="c">% This is a comment after a command</span>
+</pre></div>
+</div>
+</section>
+<section id="python-commenting">
+<h4>Python Commenting<a class="headerlink" href="#python-commenting" title="Link to this heading">#</a></h4>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># This is a comment line in Python</span>
+<span class="n">charArray</span> <span class="o">=</span> <span class="s1">&#39;Hello&#39;</span>      <span class="c1"># This is a comment after a command</span>
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+<section id="character-and-string-arrays-in-matlab-vs-python">
+<h2>Character and String Arrays in MATLAB vs Python<a class="headerlink" href="#character-and-string-arrays-in-matlab-vs-python" title="Link to this heading">#</a></h2>
+<section id="definitions">
+<h3>Definitions<a class="headerlink" href="#definitions" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>In <strong class="program">MATLAB</strong>:</p>
+<ul>
+<li><p>A <strong>character array</strong> is a sequence of characters using single quotes <code class="docutils literal notranslate"><span class="pre">'...'</span></code></p></li>
+<li><p>A <strong>string array</strong> is a container for pieces of text using double quotes <code class="docutils literal notranslate"><span class="pre">&quot;...&quot;</span></code></p></li>
+</ul>
+</li>
+<li><p>In <strong class="program">Python</strong>, strings are immutable sequences of characters using either single or double quotes (<code class="docutils literal notranslate"><span class="pre">'...'</span></code> or <code class="docutils literal notranslate"><span class="pre">&quot;...&quot;</span></code>). There is no separate type for character arrays.</p></li>
+</ul>
+<blockquote>
+<div><p>📌 A key difference between the two languages:</p>
+<ul class="simple">
+<li><p><strong>MATLAB indexing starts at 1</strong></p></li>
+<li><p><strong>Python indexing starts at 0</strong></p></li>
+</ul>
+</div></blockquote>
+<p>This off-by-one difference can lead to subtle bugs when translating logic between the two environments.</p>
+</section>
+<section id="string-literals-examples-matlab">
+<h3>String Literals Examples (MATLAB)<a class="headerlink" href="#string-literals-examples-matlab" title="Link to this heading">#</a></h3>
+<div class="highlight-matlab notranslate"><div class="highlight"><pre><span></span><span class="n">charArray</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&#39;Hello&#39;</span><span class="w">      </span><span class="c">% Character array</span>
+<span class="n">stringArray</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;Hello&quot;</span><span class="w">    </span><span class="c">% String array</span>
+</pre></div>
+</div>
+<p>MATLAB string arrays (double quotes) behave more like Python strings and support more built-in methods.</p>
+</section>
+<section id="common-operations-matlab-vs-python">
+<h3>Common Operations (MATLAB vs Python)<a class="headerlink" href="#common-operations-matlab-vs-python" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Operation</p></th>
+<th class="head"><p>MATLAB</p></th>
+<th class="head"><p>Python</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Indexing</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">x(i)</span></code>, <code class="docutils literal notranslate"><span class="pre">x(end-i+1)</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">x[i]</span></code>, <code class="docutils literal notranslate"><span class="pre">x[-i]</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>Slicing</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">x(i:j)</span></code>, <code class="docutils literal notranslate"><span class="pre">extractBetween(x,i,j)</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">x[i:j]</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>Concatenation</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">+</span> <span class="pre">y</span></code> (string), <code class="docutils literal notranslate"><span class="pre">[x,</span> <span class="pre">y]</span></code> (char)</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">+</span> <span class="pre">y</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>Repetition</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">repmat(x,</span> <span class="pre">1,</span> <span class="pre">n)</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">*</span> <span class="pre">n</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>Membership</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">contains(x,</span> <span class="pre">y)</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">y</span> <span class="pre">in</span> <span class="pre">x</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>Length</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">strlength(x)</span></code>, <code class="docutils literal notranslate"><span class="pre">length(x)</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">len(x)</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>Iteration</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">for</span> <span class="pre">i</span> <span class="pre">=</span> <span class="pre">1:strlength(x)</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">for</span> <span class="pre">c</span> <span class="pre">in</span> <span class="pre">x:</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>Comparison</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">strcmp(x,y)</span></code>, <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">==</span> <span class="pre">y</span></code>, <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">&gt;</span> <span class="pre">y</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">==</span> <span class="pre">y</span></code>, <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">&gt;</span> <span class="pre">y</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>Search</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">strfind(x,</span> <span class="pre">y)</span></code>, <code class="docutils literal notranslate"><span class="pre">startsWith(x,</span> <span class="pre">y)</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">x.find(y)</span></code>, <code class="docutils literal notranslate"><span class="pre">x.startswith(y)</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>Count</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">count(x,</span> <span class="pre">y)</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">x.count(y)</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>Sort/Reverse</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">sort(x)</span></code>, <code class="docutils literal notranslate"><span class="pre">reverse(x)</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">sorted(x)</span></code>, <code class="docutils literal notranslate"><span class="pre">reversed(x)</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="string-methods-matlab">
+<h3>String Methods (MATLAB)<a class="headerlink" href="#string-methods-matlab" title="Link to this heading">#</a></h3>
+<p>MATLAB has many methods similar to Python string methods:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">lower(x)</span></code>, <code class="docutils literal notranslate"><span class="pre">upper(x)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">split(x)</span></code>, <code class="docutils literal notranslate"><span class="pre">strtrim(x)</span></code>, <code class="docutils literal notranslate"><span class="pre">deblank(x)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">replace(x,</span> <span class="pre">old,</span> <span class="pre">new)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">startsWith(x,</span> <span class="pre">prefix)</span></code>, <code class="docutils literal notranslate"><span class="pre">endsWith(x,</span> <span class="pre">suffix)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">isstrprop(x,</span> <span class="pre">'alpha')</span></code>, <code class="docutils literal notranslate"><span class="pre">isstrprop(x,</span> <span class="pre">'digit')</span></code>, <code class="docutils literal notranslate"><span class="pre">isstrprop(x,</span> <span class="pre">'alphanum')</span></code></p></li>
+</ul>
+<p>To convert between types in MATLAB:</p>
+<div class="highlight-matlab notranslate"><div class="highlight"><pre><span></span><span class="n">x</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nb">convertCharsToStrings</span><span class="p">(</span><span class="n">y</span><span class="p">);</span><span class="w">  </span><span class="c">% Convert char array to string</span>
+</pre></div>
+</div>
+<p><strong>MATLAB Indexing:</strong></p>
+<div class="highlight-matlab notranslate"><div class="highlight"><pre><span></span><span class="n">A</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="p">[</span><span class="mi">10</span><span class="p">,</span><span class="w"> </span><span class="mi">20</span><span class="p">,</span><span class="w"> </span><span class="mi">30</span><span class="p">,</span><span class="w"> </span><span class="mi">40</span><span class="p">,</span><span class="w"> </span><span class="mi">50</span><span class="p">];</span>
+<span class="n">first_element</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">A</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span><span class="w"> </span><span class="c">% Accesses the first element (10)</span>
+<span class="n">third_element</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">A</span><span class="p">(</span><span class="mi">3</span><span class="p">);</span><span class="w"> </span><span class="c">% Accesses the third element (30)</span>
+<span class="n">last_element</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">A</span><span class="p">(</span><span class="k">end</span><span class="p">);</span><span class="w"> </span><span class="c">% Accesses the last element (50)</span>
+</pre></div>
+</div>
+<p><strong>Python Indexing:</strong></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">A</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">50</span><span class="p">]</span>
+<span class="n">first_element</span> <span class="o">=</span> <span class="n">A</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="c1"># Accesses the first element (10)</span>
+<span class="n">third_element</span> <span class="o">=</span> <span class="n">A</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="c1"># Accesses the third element (30)</span>
+<span class="n">last_element</span> <span class="o">=</span> <span class="n">A</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="c1"># Accesses the last element (50)</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="control-flow-for-and-while-loops">
+<h2>Control Flow: <code class="docutils literal notranslate"><span class="pre">for</span></code> and <code class="docutils literal notranslate"><span class="pre">while</span></code> Loops<a class="headerlink" href="#control-flow-for-and-while-loops" title="Link to this heading">#</a></h2>
+<p>Both MATLAB and Python offer robust control flow mechanisms, including <code class="docutils literal notranslate"><span class="pre">for</span></code> and <code class="docutils literal notranslate"><span class="pre">while</span></code> loops, which are essential for repetitive tasks. While their functionalities are similar, their syntax and typical use cases differ.</p>
+<section id="for-loops">
+<h3>For Loops<a class="headerlink" href="#for-loops" title="Link to this heading">#</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">For</span></code> loops are used for iterating over a sequence or a range of numbers.</p>
+<p><strong>MATLAB <code class="docutils literal notranslate"><span class="pre">for</span></code> loop syntax:</strong>
+MATLAB’s <code class="docutils literal notranslate"><span class="pre">for</span></code> loop typically iterates over a numerical range or the columns of an array.</p>
+<div class="highlight-matlab notranslate"><div class="highlight"><pre><span></span><span class="c">% Iterate over a numerical range</span>
+<span class="k">for</span><span class="w"> </span><span class="nb">i</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mi">1</span><span class="p">:</span><span class="mi">5</span>
+<span class="w">    </span><span class="nb">disp</span><span class="p">(</span><span class="nb">i</span><span class="p">);</span><span class="w"> </span><span class="c">% Displays 1, 2, 3, 4, 5</span>
+<span class="k">end</span>
+
+<span class="c">% Iterate over elements of an array (less common directly than Python)</span>
+<span class="n">myArray</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="p">[</span><span class="mi">10</span><span class="p">,</span><span class="w"> </span><span class="mi">20</span><span class="p">,</span><span class="w"> </span><span class="mi">30</span><span class="p">];</span>
+<span class="k">for</span><span class="w"> </span><span class="n">val</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">myArray</span>
+<span class="w">    </span><span class="nb">disp</span><span class="p">(</span><span class="n">val</span><span class="p">);</span><span class="w"> </span><span class="c">% Displays 10, 20, 30 (iterates column-wise)</span>
+<span class="k">end</span>
+</pre></div>
+</div>
+<p><strong>Python <code class="docutils literal notranslate"><span class="pre">for</span></code> loop syntax:</strong>
+Python’s <code class="docutils literal notranslate"><span class="pre">for</span></code> loop iterates over any iterable object (lists, strings, tuples, etc.).</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Iterate over a numerical range using range()</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span> <span class="c1"># Iterates from 0 up to (but not including) 5</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="c1"># Prints 0, 1, 2, 3, 4</span>
+
+<span class="c1"># Iterate over elements of a list</span>
+<span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">my_list</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">val</span><span class="p">)</span> <span class="c1"># Prints 10, 20, 30</span>
+
+<span class="c1"># Iterate with index and value using enumerate()</span>
+<span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">my_list</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Index: </span><span class="si">{</span><span class="n">index</span><span class="si">}</span><span class="s2">, Value: </span><span class="si">{</span><span class="n">value</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><strong>Key Difference for <code class="docutils literal notranslate"><span class="pre">for</span></code> loops:</strong> MATLAB’s <code class="docutils literal notranslate"><span class="pre">for</span></code> loop typically uses a numerical range that starts at 1, aligning with its 1-based indexing. Python’s <code class="docutils literal notranslate"><span class="pre">range()</span></code> function, on the other hand, starts at 0 by default, reflecting its 0-based indexing.</p>
+</section>
+<section id="while-loops">
+<h3>While Loops<a class="headerlink" href="#while-loops" title="Link to this heading">#</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">While</span></code> loops execute a block of code as long as a specified condition is true.</p>
+<p><strong>MATLAB <code class="docutils literal notranslate"><span class="pre">while</span></code> loop syntax:</strong></p>
+<div class="highlight-matlab notranslate"><div class="highlight"><pre><span></span><span class="n">counter</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<span class="k">while</span><span class="w"> </span><span class="n">counter</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">5</span>
+<span class="w">    </span><span class="nb">disp</span><span class="p">(</span><span class="n">counter</span><span class="p">);</span>
+<span class="w">    </span><span class="n">counter</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">counter</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<span class="k">end</span>
+</pre></div>
+</div>
+<p><strong>Python <code class="docutils literal notranslate"><span class="pre">while</span></code> loop syntax:</strong></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">counter</span> <span class="o">=</span> <span class="mi">0</span> <span class="c1"># Python&#39;s common starting point</span>
+<span class="k">while</span> <span class="n">counter</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">counter</span><span class="p">)</span>
+    <span class="n">counter</span> <span class="o">+=</span> <span class="mi">1</span>
+</pre></div>
+</div>
+<p><strong>Key Similarity for <code class="docutils literal notranslate"><span class="pre">while</span></code> loops:</strong> The fundamental logic of <code class="docutils literal notranslate"><span class="pre">while</span></code> loops is very similar across both languages: they continue executing as long as a boolean condition remains true. The primary difference lies in the syntax of the condition and the indentation for defining the loop’s body.</p>
+</section>
+</section>
+<section id="videos">
+<h2>Videos<a class="headerlink" href="#videos" title="Link to this heading">#</a></h2>
+<section id="matlab-interface-introduction">
+<h3><strong class="program">MATLAB</strong> Interface Introduction<a class="headerlink" href="#matlab-interface-introduction" title="Link to this heading">#</a></h3>
+<div class="video_wrapper" style="">
+<iframe allowfullscreen="true" src="https://www.youtube.com/embed/F9js5H2XfOE" style="border: 0; height: 345px; width: 560px">
+</iframe></div></section>
+<section id="algebraic-operations-in-matlab">
+<h3>Algebraic Operations in <strong class="program">MATLAB</strong><a class="headerlink" href="#algebraic-operations-in-matlab" title="Link to this heading">#</a></h3>
+<div class="video_wrapper" style="">
+<iframe allowfullscreen="true" src="https://www.youtube.com/embed/7ukezAd1kI4" style="border: 0; height: 345px; width: 560px">
+</iframe></div></section>
+<section id="built-in-functions">
+<h3>Built-in Functions<a class="headerlink" href="#built-in-functions" title="Link to this heading">#</a></h3>
+<div class="video_wrapper" style="">
+<iframe allowfullscreen="true" src="https://www.youtube.com/embed/7z2aI23wsis" style="border: 0; height: 345px; width: 560px">
+</iframe></div></section>
+<section id="variable-names">
+<h3>Variable Names<a class="headerlink" href="#variable-names" title="Link to this heading">#</a></h3>
+<div class="video_wrapper" style="">
+<iframe allowfullscreen="true" src="https://www.youtube.com/embed/mjP-lerOxmg" style="border: 0; height: 345px; width: 560px">
+</iframe></div></section>
+<section id="assigning-vectors-and-matrices">
+<h3>Assigning Vectors and Matrices<a class="headerlink" href="#assigning-vectors-and-matrices" title="Link to this heading">#</a></h3>
+<div class="video_wrapper" style="">
+<iframe allowfullscreen="true" src="https://www.youtube.com/embed/p8PvrhuIqlM" style="border: 0; height: 345px; width: 560px">
+</iframe></div></section>
+<section id="array-indexing-copying-values">
+<h3>Array Indexing: Copying Values<a class="headerlink" href="#array-indexing-copying-values" title="Link to this heading">#</a></h3>
+<div class="video_wrapper" style="">
+<iframe allowfullscreen="true" src="https://www.youtube.com/embed/kcPvFbVwqhw" style="border: 0; height: 345px; width: 560px">
+</iframe></div></section>
+<section id="array-indexing-replacing-values">
+<h3>Array Indexing: Replacing Values<a class="headerlink" href="#array-indexing-replacing-values" title="Link to this heading">#</a></h3>
+<div class="video_wrapper" style="">
+<iframe allowfullscreen="true" src="https://www.youtube.com/embed/Ay3U2R0xJ3w" style="border: 0; height: 345px; width: 560px">
+</iframe></div></section>
+<section id="scripts">
+<h3>Scripts<a class="headerlink" href="#scripts" title="Link to this heading">#</a></h3>
+<div class="video_wrapper" style="">
+<iframe allowfullscreen="true" src="https://www.youtube.com/embed/inP5sy7ms3k" style="border: 0; height: 345px; width: 560px">
+</iframe></div></section>
+<section id="the-fprintf-command">
+<h3>The <code class="code highlight matlab docutils literal highlight-matlab"><span class="nb">fprintf</span></code> Command<a class="headerlink" href="#the-fprintf-command" title="Link to this heading">#</a></h3>
+<div class="video_wrapper" style="">
+<iframe allowfullscreen="true" src="https://www.youtube.com/embed/xjrrZAJDEHM" style="border: 0; height: 345px; width: 560px">
+</iframe></div></section>
+<section id="conditionals">
+<h3>Conditionals<a class="headerlink" href="#conditionals" title="Link to this heading">#</a></h3>
+<div class="video_wrapper" style="">
+<iframe allowfullscreen="true" src="https://www.youtube.com/embed/HN4KswxNb8s" style="border: 0; height: 345px; width: 560px">
+</iframe></div></section>
+<section id="loops-while-for">
+<h3>Loops (<code class="docutils literal notranslate"><span class="pre">while</span></code>/<code class="docutils literal notranslate"><span class="pre">for</span></code>):<a class="headerlink" href="#loops-while-for" title="Link to this heading">#</a></h3>
+<div class="video_wrapper" style="">
+<iframe allowfullscreen="true" src="https://www.youtube.com/embed/4M_XDEAXEaQ" style="border: 0; height: 345px; width: 560px">
+</iframe></div></section>
+<section id="element-by-element-operations">
+<h3>Element-by-element operations<a class="headerlink" href="#element-by-element-operations" title="Link to this heading">#</a></h3>
+<div class="video_wrapper" style="">
+<iframe allowfullscreen="true" src="https://www.youtube.com/embed/OqII-Y_PwkU" style="border: 0; height: 345px; width: 560px">
+</iframe></div></section>
+<section id="concatenating-arrays">
+<h3>Concatenating arrays<a class="headerlink" href="#concatenating-arrays" title="Link to this heading">#</a></h3>
+<div class="video_wrapper" style="">
+<iframe allowfullscreen="true" src="https://www.youtube.com/embed/McNC1ivtw3E" style="border: 0; height: 345px; width: 560px">
+</iframe></div></section>
+<section id="publish-matlab-script">
+<span id="pub-matlab-b"></span><h3>Publish MATLAB script<a class="headerlink" href="#publish-matlab-script" title="Link to this heading">#</a></h3>
+<iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/983291/sp/98329100/embedIframeJs/uiconf_id/44472651/partner_id/983291?iframeembed=true&playerId=kaltura_player&entry_id=1_x99vdbif&flashvars[streamerType]=auto&amp;flashvars[localizationCode]=en&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=1_m0c73wxb" width="560" height="315" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-downloads allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="How to Publish in MATLAB Demo"></iframe>
+</section>
+</section>
+<section id="matlab-in-vs-code">
+<h2>MATLAB in VS Code<a class="headerlink" href="#matlab-in-vs-code" title="Link to this heading">#</a></h2>
+<p>Follow the steps below to connect your MATLAB account to VS Code.</p>
+<div class="note admonition">
+<p class="admonition-title">Note</p>
+<p>Before you proceed, MATLAB (R2021b or later version) must be installed on your system. To install MATLAB, click <a class="reference internal" href="../../Start_Here/course_software/course_software.html#start-here-course-software-matlab"><span class="std std-ref">here</span></a></p>
+</div>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-0">
+Windows</label><div class="sd-tab-content docutils">
+<ol class="arabic">
+<li><p>Open VS Code and install the MATLAB extension from the Extensions Marketplace.</p>
+<figure class="align-default" id="id1">
+<img alt="../../_images/ma_ext_install.png" src="../../_images/ma_ext_install.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 15.1 </span><span class="caption-text">A representation of installing MATLAB extension on VS Code</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</li>
+<li><p>Go to Settings in VS Code.</p></li>
+<li><p>Search for “MATLAB: Executable Path”.</p></li>
+<li><p>Set the path to your MATLAB executable. You may have to update the version of MATLAB appropriately.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>C:\Program Files\MATLAB\R2024a
+</pre></div>
+</div>
+<figure class="align-default" id="id2">
+<img alt="../../_images/ma_ext_install2.png" src="../../_images/ma_ext_install2.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 15.2 </span><span class="caption-text">A representation of adjusting settings for MATLAB extension on VS Code</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</li>
+<li><p>Close and reopen VS Code to apply the changes.</p></li>
+<li><p>Open a new MATLAB terminal in VS Code.</p></li>
+<li><p>Run the following command to test the set up:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>fprintf(&quot;hello World&quot;)
+</pre></div>
+</div>
+<figure class="align-default" id="id3">
+<img alt="../../_images/ma_ext_test.png" src="../../_images/ma_ext_test.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 15.3 </span><span class="caption-text">A representation of opening a new MATLAB terminal and testing a print function in MATLAB</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</li>
+<li><p>If the test function does not run, try restarting VS Code. Then, check the bottom right corner of VS Code for a notification, prompting you to connect your MATLAB Online Account. Click OK.</p>
+<figure class="align-default" id="id4">
+<img alt="../../_images/ma_ext_install3.png" src="../../_images/ma_ext_install3.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 15.4 </span><span class="caption-text">A representation of connecting MATLAB Online account</span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</li>
+<li><p>Now, a new tab will be opened in your web browser. Log in with your MATLAB credentials.</p>
+<figure class="align-default" id="id5">
+<img alt="../../_images/ma_ext_install4.png" src="../../_images/ma_ext_install4.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 15.5 </span><span class="caption-text">A representation of connecting MATLAB Online account</span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</li>
+<li><p>Once logged in, enter your MATLAB version as shown in Step 4. You may have to update the version of MATLAB appropriately.</p>
+<figure class="align-default" id="id6">
+<img alt="../../_images/ma_ext_install5.png" src="../../_images/ma_ext_install5.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 15.6 </span><span class="caption-text">A representation of connecting MATLAB Online account</span><a class="headerlink" href="#id6" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</li>
+<li><p>Go to Step 5 and repeat the process.</p></li>
+</ol>
+</div>
+<input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-1">
+Mac OS</label><div class="sd-tab-content docutils">
+<ol class="arabic">
+<li><p>Open VS Code and install the MATLAB extension from the Extensions Marketplace.</p>
+<figure class="align-default" id="id7">
+<img alt="../../_images/ma_ext_install.png" src="../../_images/ma_ext_install.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 15.7 </span><span class="caption-text">A representation of installing MATLAB extension on VS Code</span><a class="headerlink" href="#id7" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</li>
+<li><p>Go to Settings in VS Code.</p></li>
+<li><p>Search for “MATLAB: Executable Path”.</p></li>
+<li><p>Set the path to your MATLAB executable. You may have to update the version of MATLAB appropriately.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>/Applications/MATLAB_R2024a.app
+</pre></div>
+</div>
+<figure class="align-default" id="id8">
+<img alt="../../_images/ma_ext_install2.png" src="../../_images/ma_ext_install2.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 15.8 </span><span class="caption-text">A representation of adjusting settings for MATLAB extension on VS Code</span><a class="headerlink" href="#id8" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</li>
+<li><p>Close and reopen VS Code to apply the changes.</p></li>
+<li><p>Open a new MATLAB terminal in VS Code.</p></li>
+<li><p>Run the following command to test the set up:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>fprintf(&quot;hello World&quot;)
+</pre></div>
+</div>
+<figure class="align-default" id="id9">
+<img alt="../../_images/ma_ext_test.png" src="../../_images/ma_ext_test.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 15.9 </span><span class="caption-text">A representation of opening a new MATLAB terminal and testing a print function in MATLAB</span><a class="headerlink" href="#id9" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</li>
+<li><p>If the test function does not run, try restarting VS Code. Then, check the bottom right corner of VS Code for a notification, prompting you to connect your MATLAB Online Account. Click OK.</p>
+<figure class="align-default" id="id10">
+<img alt="../../_images/ma_ext_install3.png" src="../../_images/ma_ext_install3.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 15.10 </span><span class="caption-text">A representation of connecting MATLAB Online account</span><a class="headerlink" href="#id10" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</li>
+<li><p>Now, a new tab will be opened in your web browser. Log in with your MATLAB credentials.</p>
+<figure class="align-default" id="id11">
+<img alt="../../_images/ma_ext_install4.png" src="../../_images/ma_ext_install4.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 15.11 </span><span class="caption-text">A representation of connecting MATLAB Online account</span><a class="headerlink" href="#id11" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</li>
+<li><p>Once logged in, enter your MATLAB version as shown in Step 4. You may have to update the version of MATLAB appropriately.</p>
+<figure class="align-default" id="id12">
+<img alt="../../_images/ma_ext_install5.png" src="../../_images/ma_ext_install5.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 15.12 </span><span class="caption-text">A representation of connecting MATLAB Online account</span><a class="headerlink" href="#id12" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</li>
+<li><p>Go to Step 5 and repeat the process.</p></li>
+</ol>
+</div>
+<input id="sd-tab-item-2" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-2">
+Linux</label><div class="sd-tab-content docutils">
+<ol class="arabic">
+<li><p>Open VS Code and install the MATLAB extension from the Extensions Marketplace.</p>
+<figure class="align-default" id="id13">
+<img alt="../../_images/ma_ext_install.png" src="../../_images/ma_ext_install.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 15.13 </span><span class="caption-text">A representation of installing MATLAB extension on VS Code</span><a class="headerlink" href="#id13" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</li>
+<li><p>Go to Settings in VS Code.</p></li>
+<li><p>Search for “MATLAB: Executable Path”.</p></li>
+<li><p>Set the path to your MATLAB executable. You may have to update the version of MATLAB appropriately.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>/usr/local/MATLAB/R2024a
+</pre></div>
+</div>
+<figure class="align-default" id="id14">
+<img alt="../../_images/ma_ext_install2.png" src="../../_images/ma_ext_install2.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 15.14 </span><span class="caption-text">A representation of adjusting settings for MATLAB extension on VS Code</span><a class="headerlink" href="#id14" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</li>
+<li><p>Close and reopen VS Code to apply the changes.</p></li>
+<li><p>Open a new MATLAB terminal in VS Code.</p></li>
+<li><p>Run the following command to test the set up:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>fprintf(&quot;hello World&quot;)
+</pre></div>
+</div>
+<figure class="align-default" id="id15">
+<img alt="../../_images/ma_ext_test.png" src="../../_images/ma_ext_test.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 15.15 </span><span class="caption-text">A representation of opening a new MATLAB terminal and testing a print function in MATLAB</span><a class="headerlink" href="#id15" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</li>
+<li><p>If the test function does not run, try restarting VS Code. Then, check the bottom right corner of VS Code for a notification, prompting you to connect your MATLAB Online Account. Click OK.</p>
+<figure class="align-default" id="id16">
+<img alt="../../_images/ma_ext_install3.png" src="../../_images/ma_ext_install3.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 15.16 </span><span class="caption-text">A representation of connecting MATLAB Online account</span><a class="headerlink" href="#id16" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</li>
+<li><p>Now, a new tab will be opened in your web browser. Log in with your MATLAB credentials.</p>
+<figure class="align-default" id="id17">
+<img alt="../../_images/ma_ext_install4.png" src="../../_images/ma_ext_install4.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 15.17 </span><span class="caption-text">A representation of connecting MATLAB Online account</span><a class="headerlink" href="#id17" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</li>
+<li><p>Once logged in, enter your MATLAB version as shown in Step 4. You may have to update the version of MATLAB appropriately.</p>
+<figure class="align-default" id="id18">
+<img alt="../../_images/ma_ext_install5.png" src="../../_images/ma_ext_install5.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 15.18 </span><span class="caption-text">A representation of connecting MATLAB Online account</span><a class="headerlink" href="#id18" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</li>
+<li><p>Go to Step 5 and repeat the process.</p></li>
+</ol>
+</div>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./Part_5_MATLAB/M1"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="1_pre-class_material.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">15.1. </span>Pre-Class Assignments</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="tasks/pre_0/a/instructions.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">15.1.2. </span>Task 0</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reading">Reading</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#commenting-between-matlab-and-python">Commenting between MATLAB and Python</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#matlab-commenting">MATLAB Commenting</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#python-commenting">Python Commenting</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#character-and-string-arrays-in-matlab-vs-python">Character and String Arrays in MATLAB vs Python</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#definitions">Definitions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#string-literals-examples-matlab">String Literals Examples (MATLAB)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#common-operations-matlab-vs-python">Common Operations (MATLAB vs Python)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#string-methods-matlab">String Methods (MATLAB)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#control-flow-for-and-while-loops">Control Flow: <code class="docutils literal notranslate"><span class="pre">for</span></code> and <code class="docutils literal notranslate"><span class="pre">while</span></code> Loops</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#for-loops">For Loops</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#while-loops">While Loops</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#videos">Videos</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matlab-interface-introduction"><strong class="program">MATLAB</strong> Interface Introduction</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#algebraic-operations-in-matlab">Algebraic Operations in <strong class="program">MATLAB</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#built-in-functions">Built-in Functions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variable-names">Variable Names</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#assigning-vectors-and-matrices">Assigning Vectors and Matrices</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#array-indexing-copying-values">Array Indexing: Copying Values</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#array-indexing-replacing-values">Array Indexing: Replacing Values</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#scripts">Scripts</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-fprintf-command">The <code class="code highlight matlab docutils literal highlight-matlab"><span class="nb">fprintf</span></code> Command</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conditionals">Conditionals</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#loops-while-for">Loops (<code class="docutils literal notranslate"><span class="pre">while</span></code>/<code class="docutils literal notranslate"><span class="pre">for</span></code>):</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#element-by-element-operations">Element-by-element operations</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#concatenating-arrays">Concatenating arrays</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#publish-matlab-script">Publish MATLAB script</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matlab-in-vs-code">MATLAB in VS Code</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By <a href="/2025-fall/Appendices/contributors.html">Contributors</a>
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025 All rights reserved..
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
